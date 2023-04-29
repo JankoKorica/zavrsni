@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Users</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/listUsers.css">
+    <script defer src="javascript/index.js"></script>
+    <script defer src="javascript/users.js"></script>
+</head>
+<body>
+<header>
+    <h2><a href="index.html" class="logo">JBOOK</a></h2>
+    <form id="search-form">
+        <input type="text" placeholder="Search" id="search" autocomplete="off">
+    </form>
+    <div id="search-result-container">
+    </div>
+    <ul id="navbar">
+        <li>
+            <a href="notifications.html" class="notification-btn">
+                <span id="notification-alert"></span>
+                <span>Notifications</span>
+            </a>
+        </li>
+        <li><div id="user-img-logout"></div></li>
+    </ul>
+    <div id="logout-options" class="logout-not-visible">
+        <div class="logout-option">
+            <a href="myProfile.html">My profile</a>
+        </div>
+        <div class="line"></div>
+        <div class="logout-option">
+            <a href="logIn.html">Log out</a>
+        </div>
+    </div>
+</header>
+<main>
+    <div id="user_options-container">
+        <div class="user-data">
+            <div class="user-img"></div>
+            <h3>Janko Korica</h3>
+        </div>
+        <div class="line"></div>
+        <ul class="user-options">
+            <li><div id="search-btn" class="link-btn">Search</div></li>
+            <li><a href="newPost.html" class="link-btn">New post</a></li>
+        </ul>
+    </div>
+    <h1>Followers</h1>
+    <div id="user-container">
+        <!--<div href="userProfiles.html" class="user">
+            <div class="user-profile-img"></div>
+            <div class="user-content">
+                <h3>Janko Korica</h3>
+            </div>
+        </div>
+        <div class="line"></div>-->
+    </div>
+</main>
+</body>
+</html>

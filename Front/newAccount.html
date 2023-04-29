@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create new</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/signIn.css">
+    <script defer src="javascript/signIn.js"></script>
+</head>
+<body>
+<main>
+    <form id="edit-profile">
+        <div id="user-img"></div>
+        <label for="profile-pic-in">Add profile pucture</label>
+        <input type="file" id="profile-pic-in" accept="image/*">
+        <div class="edit-profile-input">
+            <label for="username-in">Username:</label>
+            <input type="text" id="username-in">
+        </div>
+        <div class="edit-profile-input">
+            <label for="email-in">Email:</label>
+            <input type="email" id="email-in">
+        </div>
+        <div class="edit-profile-input">
+            <label for="date-in">Date of birth:</label>
+            <input type="date" id="date-in">
+        </div>
+        <div class="edit-profile-input">
+            <label for="password-in">Password:</label>
+            <input type="password" id="password-in">
+        </div>
+        <div class="edit-profile-input">
+            <label for="password2-in">Repeat password:</label>
+            <input type="password" id="password2-in">
+        </div>
+        <div class="edit-profile-input">
+        <label for="about-in">About:</label>
+        <input type="text" id="about-in">
+        </div>
+        <p style="color: red"></p>
+        <button type="button" id="create">Create</button>
+    </form>
+</main>
+</body>
+</html>
