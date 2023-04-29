@@ -1,0 +1,63 @@
+#edit-profile{
+    margin: 100px;
+    padding: 30px;
+    display: flex;
+    background-color: #434343;
+    flex-direction: column;
+    width: 40%;
+    align-items: center;
+    border-radius: 5px;
+}
+#user-img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-image: url("../resources/default-avatar.jpg");
+    background-position: center center;
+    background-size: cover;
+}
+.edit-profile-input{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+.edit-profile-input input{
+    width: 100%;
+    font-size: 20px;
+    font-family: Nunito, sans-serif;
+}
+input[type=file]::file-selector-button {
+    margin-right: 20px;
+    border: none;
+    background: gray;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+}
+input[type=file]::file-selector-button:hover{
+    background-color: lightgray;
+}
+input[type=file] {
+    width: 350px;
+    max-width: 100%;
+    color: black;
+    padding: 5px;
+    background: white;
+    border-radius: 10px;
+    border: 1px solid #555;
+    margin: 20px;
+}
+#edit-profile button{
+    width: 100%;
+    font-family: Nunito, sans-serif;
+    font-size: 20px;
+    border: 3px solid gray;
+    border-radius: 5px;
+    background-color: #434343;
+    color: white;
+}
+#edit-profile button:hover{
+    background-color: gray;
+    cursor: pointer;
+}

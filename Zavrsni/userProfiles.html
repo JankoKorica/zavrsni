@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/myProfile.css">
+    <link rel="stylesheet" href="css/frontpage.css">
+    <script defer src="javascript/index.js"></script>
+    <script defer src="javascript/post.js"></script>
+    <script defer src="javascript/userProfiles.js"></script>
+</head>
+<body>
+<header>
+    <h2><a href="index.html" class="logo">JBOOK</a></h2>
+    <form id="search-form">
+        <input type="text" placeholder="Search" id="search">
+    </form>
+    <div id="search-result-container">
+    </div>
+    <ul id="navbar">
+        <li>
+            <a href="notifications.html" class="notification-btn">
+                <span id="notification-alert"></span>
+                <span>Notifications</span>
+            </a>
+        </li>
+        <li><div id="user-img-logout"></div></li>
+    </ul>
+    <div id="logout-options" class="logout-not-visible">
+        <div class="logout-option">
+            <a href="myProfile.html">My profile</a>
+        </div>
+        <div class="line"></div>
+        <div class="logout-option">
+            <a href="logIn.html">Log out</a>
+        </div>
+    </div>
+</header>
+<main>
+    <div class="profile-data">
+        <div id="profile-pic"></div>
+        <div>
+            <div class="profile-data-edit">
+                <h1>Janko Korica</h1>
+                <button class="follow-btn">Follow</button>
+            </div>
+            <p id="about">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <div class="follow-data">
+                <div id="follower-data">
+                    <h3><a href="listUsers.html" onclick="sessionStorage.setItem('userlist', 'followers'); sessionStorage.setItem('userType', 'visited');">Followers</a></h3>
+                    <h3 id="follower-count">100</h3>
+                </div>
+                <div id="followee-data">
+                    <h3><a href="listUsers.html" onclick="sessionStorage.setItem('userlist', 'followees');sessionStorage.setItem('userType', 'visited');">Following</a></h3>
+                    <h3 id="followee-count">100</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="line"></div>
+    <div id="user-posts">
+    </div>
+</main>
+</body>
+</html>

@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
+button{
+    border: none;
+    outline: none;
+    border-radius: 0 5px 5px 0;
+}
+article{
+    padding: 20px;
+    background-color: #434343;
+    width: 40%;
+    margin: 40px 0;
+    border-radius: 5px;
+}
+.post-image{
+    width: 100%;
+    height: auto;
+}
+#timeline-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+button{
+    padding: 5px;
+    text-decoration: none;
+    background-color: gray;
+    border: 1px solid gray;
+    color: white;
+    height: min-content;
+    border-radius: 5px;
+    font-family: Nunito, sans-serif;
+}
+button:hover{
+    background-color: #434343;
+}
+textarea{
+    width: 100%;
+    margin: 20px 0;
+    resize: none;
+}
+#comment-button{
+    display: flex;
+    justify-content: flex-end;
+}
+.new{
+    display: flex;
+    justify-content: center;
+}
+.comments{
+    padding: 10px;
+    background-color: #555555;
+    overflow: auto;
+    max-height: 500px;
+}
+.post-options{
+    display: flex;
+    flex-direction: row;
+}
+.comment-textarea{
+    width: 100%;
+    scale: none;
+}
+.add-comment-form{
+    height: 10%;
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0;
+}
+.post-comment-btn-container{
+    display: flex;
+    justify-content: flex-end;
+}
+.comment-poster-image{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    margin: 3px;
+    background-image: url("../resources/default-avatar.jpg");
+    background-position: center center;
+    background-size: cover;
+}
+.comment-poster-data{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.comment{
+    margin: 10px;
+}
+.post-poster-data{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.post-poster-img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin: 5px;
+    background-image: url("../resources/default-avatar.jpg");
+    background-position: center center;
+    background-size: cover;
+}
+.add-comment-btn{
+    margin: 5px;
+    cursor: pointer;
+}
+.comment-container{
+    display: none;
+}
+.comment-container-visible{
+    display: block;
+}
+.post-options{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.post-options-container{
+    display: flex;
+    flex-direction: row;
+}
+.is-liked{
+    margin: 5px;
+    cursor: pointer;
+}
+.is-not-liked{
+    margin: 5px;
+    cursor: pointer;
+}
